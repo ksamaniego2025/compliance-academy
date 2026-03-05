@@ -1,0 +1,22 @@
+{
+  "name": "compliance-academy",
+  "version": "1.0.0",
+  "description": "Plataforma E-learning para capacitación en prevención de blanqueo de capitales",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend"
+  },
+  "keywords": [
+    "elearning",
+    "aml",
+    "compliance",
+    "training"
+  ],
+  "author": "Compliance Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
